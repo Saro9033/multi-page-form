@@ -3,8 +3,9 @@ import React from 'react'
 const Steps = ({ step, index ,setCurrStep,currStep}) => {
 
     const handleStepClick = (num) =>{
+       if(step.completed){
         setCurrStep(num) 
-       
+       }
       }
 
     return (
